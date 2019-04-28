@@ -1,0 +1,2 @@
+validateNotEmpty("#inputUsername");
+validateNotEmpty("#inputPassword");
