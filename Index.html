@@ -5,10 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./style/site.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="./scripts/cart.js"></script>
 </head>
 <body>
 
@@ -27,21 +29,58 @@
     </li>
   </ul>
 
-  <ul class="navbar-nav ml-auto">
-    <!-- Dropdown -->
-    <li class="nav-item dropdown">
+  <ul class="navbar-nav ml-auto">      
+      <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
           My profile
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Cart</a>
           <a class="dropdown-item" href="#">Orders</a>
           <a class="dropdown-item" href="#">Edit profile</a>
           <a class="dropdown-item" href="GuestPage.html">Log out</a>
         </div>
       </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#" id="cart">
+            <i class="fa fa-shopping-cart"></i> Cart <span class="badge">3</span>
+          </a>
+      </li>
   </ul>
 </nav>
+    <div class="shopping-cart">
+      <div class="shopping-cart-header">
+        <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">3</span>
+        <div class="shopping-cart-total">
+          <span class="lighter-text">Total:</span>
+          <span class="main-color-text">$4000 | 0.78₿</span>
+        </div>
+      </div> <!--end shopping-cart-header -->
+  
+      <ul class="shopping-cart-items">
+        <li class="clearfix">
+          <img class="cart-image" src="https://timedotcom.files.wordpress.com/2018/03/passport-renewal.jpg" alt="Passport" />
+          <span class="item-name">International Passport</span>
+          <span class="item-price">$850 | 0.17₿</span>
+          <span class="item-quantity">Quantity: 1</span>
+        </li>
+  
+        <li class="clearfix">
+          <img class="cart-image" src="https://media2.fdncms.com/portmerc/imager/u/large/19820795/origin_7-points-oregon-staff.jpg" alt="Weed" />
+          <span class="item-name">Weed (OG KUSH) 1 pound</span>
+          <span class="item-price">$900 | 0.18₿</span>
+          <span class="item-quantity">Quantity: 3</span>
+        </li>
+  
+        <li class="clearfix">
+          <img class="cart-image" src="https://nationalinterest.org/sites/default/files/styles/desktop__1486_x_614/public/main_images/glock36.jpg?itok=AxjsaSdx" alt="Glock18" />
+          <span class="item-name">Glock-18 Fully loaded</span>
+          <span class="item-price">$450 | 0.088₿</span>
+          <span class="item-quantity">Quantity: 1</span>
+        </li>
+      </ul>
+  
+      <a href="#" class="btn btn-block btn-primary">Checkout</a>
+    </div> 
 <br>
   
 <div class="container">
@@ -53,9 +92,7 @@
         
         Aliquam hendrerit turpis vitae sapien hendrerit gravida. Maecenas nec placerat nunc, id venenatis purus. Fusce ante urna, cursus id fringilla tristique, congue sit amet sapien. Maecenas hendrerit varius est facilisis rhoncus. Fusce dignissim volutpat ornare. Aenean sit amet erat non risus mattis congue. Donec rutrum dapibus ante lobortis lacinia. Ut in ipsum ipsum. Donec mattis faucibus justo a finibus. Nunc ipsum sapien, hendrerit sit amet malesuada eu, varius at diam. Quisque suscipit mauris et eros mollis aliquet. Mauris egestas scelerisque efficitur. Sed at erat ultricies, laoreet justo sed, placerat mi.
         
-        In eget tincidunt urna, at tristique urna. Morbi congue mauris non erat finibus, sed vehicula tortor dapibus. Etiam euismod rhoncus auctor. Fusce mollis, est ac pellentesque dictum, urna lacus semper odio, sed placerat lectus sem in eros. Donec rutrum lacus dui, sed aliquet metus egestas nec. Aenean sed lectus eu lectus tincidunt egestas in at nisl. Aenean posuere augue felis, sit amet euismod nunc malesuada malesuada.
-        
-        In consectetur in quam quis egestas. Phasellus nec neque eget orci consequat condimentum. Aenean eget euismod justo, sed fermentum nisl. Sed vitae vulputate mauris, blandit feugiat eros. Pellentesque porttitor feugiat dolor ut efficitur. Phasellus condimentum est tempor augue molestie, ac tempus orci tempor. Cras et consequat urna, non elementum tellus. Sed tempus sagittis nisi, ac luctus enim faucibus eu. Cras ex magna, feugiat sed ligula nec, bibendum sagittis neque. Suspendisse viverra gravida neque, at tempus dolor faucibus nec. Nullam sit amet vulputate lectus, at tempor enim. Vestibulum maximus consequat velit id tincidunt. Praesent interdum venenatis tristique. Quisque tristique maximus tellus, ac tempor purus dapibus faucibus.
+        In eget tincidunt urna, at tristique urna. Morbi congue mauris non erat finibus, sed vehicula tortor dapibus. Etiam euismod rhoncus auctor. Fusce mollis, est ac pellentesque dictum, urna lacus semper odio, sed placerat lectus sem in eros. Donec rutrum lacus dui, sed aliquet metus egestas nec. Aenean sed lectus eu lectus tincidunt egestas in at nisl. Aenean posuere augue felis, sit amet euismod nunc malesuada malesuada.               
   </p>
 </div>
 
