@@ -42,7 +42,7 @@
         </div>
         <div class="card-body">
           <h5 class="text-center">Register</h5>
-          <form id="register-form">
+          <form id="register-form" method="get" action="Login.html">
             <div class="form-group">
               <input type="text" id="inputUserame" class="form-control" placeholder="Username" required autofocus>             
             </div>            
@@ -59,8 +59,8 @@
               <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Confirm Password" required>              
             </div>
 
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
-            <a class="d-block text-center mt-2 small" href="#">Sign In</a>
+            <button id="register-btn" class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+            <p class="d-block text-center mt-2 small">Already have an account? <a href="Login.html">Sign In</a></p>
           </form>
         </div>
       </div>
