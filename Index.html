@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./style/site.css">
+  <link rel="stylesheet" href="./style/searchbar.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -24,6 +25,12 @@
     <li class="nav-item">
       <a class="nav-link" href="About.html">About</a>
     </li>
+    <div class="d-flex justify-content-left">
+        <div class="searchbar">
+          <input class="search_input" type="text" name="" placeholder="Search...">
+          <a href="#" class="search_icon"><i class="fa fa-search"></i></a>
+        </div>
+      </div>
   </ul>
 
   <ul class="navbar-nav ml-auto">      
@@ -44,53 +51,44 @@
       </li>
   </ul>
 </nav>
-    <div class="shopping-cart">
-      <div class="shopping-cart-header">
-        <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">3</span>
-        <div class="shopping-cart-total">
-          <span class="lighter-text">Total:</span>
-          <span class="main-color-text">$4000 | 0.78₿</span>
-        </div>
-      </div> <!--end shopping-cart-header -->
-  
-      <ul class="shopping-cart-items">
-        <li class="clearfix">
-          <img class="cart-image" src="https://timedotcom.files.wordpress.com/2018/03/passport-renewal.jpg" alt="Passport" />
-          <span class="item-name">International Passport</span>
-          <span class="item-price">$850 | 0.17₿</span>
-          <span class="item-quantity">Quantity: 1</span>
-        </li>
-  
-        <li class="clearfix">
-          <img class="cart-image" src="https://media2.fdncms.com/portmerc/imager/u/large/19820795/origin_7-points-oregon-staff.jpg" alt="Weed" />
-          <span class="item-name">Weed (OG KUSH) 1 pound</span>
-          <span class="item-price">$900 | 0.18₿</span>
-          <span class="item-quantity">Quantity: 3</span>
-        </li>
-  
-        <li class="clearfix">
-          <img class="cart-image" src="https://nationalinterest.org/sites/default/files/styles/desktop__1486_x_614/public/main_images/glock36.jpg?itok=AxjsaSdx" alt="Glock18" />
-          <span class="item-name">Glock-18 Fully loaded</span>
-          <span class="item-price">$450 | 0.088₿</span>
-          <span class="item-quantity">Quantity: 1</span>
-        </li>
-      </ul>
-  
-      <a href="#" class="btn btn-block btn-primary">Checkout</a>
-    </div> 
+<div class="shopping-cart">
+  <div class="shopping-cart-header">
+    <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">3</span>
+    <div class="shopping-cart-total">
+      <span class="lighter-text">Total:</span>
+      <span class="main-color-text">$4000 | 0.78₿</span>
+    </div>
+  </div> <!--end shopping-cart-header -->
+
+  <ul class="shopping-cart-items">
+    <li class="clearfix">
+      <img class="cart-image" src="https://timedotcom.files.wordpress.com/2018/03/passport-renewal.jpg" alt="Passport" />
+      <span class="item-name">International Passport</span>
+      <span class="item-price">$850 | 0.17₿</span>
+      <span class="item-quantity">Quantity: 1</span>
+    </li>
+
+    <li class="clearfix">
+      <img class="cart-image" src="https://media2.fdncms.com/portmerc/imager/u/large/19820795/origin_7-points-oregon-staff.jpg" alt="Weed" />
+      <span class="item-name">Weed (OG KUSH) 1 pound</span>
+      <span class="item-price">$900 | 0.18₿</span>
+      <span class="item-quantity">Quantity: 3</span>
+    </li>
+
+    <li class="clearfix">
+      <img class="cart-image" src="https://nationalinterest.org/sites/default/files/styles/desktop__1486_x_614/public/main_images/glock36.jpg?itok=AxjsaSdx" alt="Glock18" />
+      <span class="item-name">Glock-18 Fully loaded</span>
+      <span class="item-price">$450 | 0.088₿</span>
+      <span class="item-quantity">Quantity: 1</span>
+    </li>
+  </ul>
+
+  <a href="#" class="btn btn-block btn-primary">Checkout</a>
+</div> 
 <br>
   
 <div class="container">
-  <h1>Home</h1>
-  <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat pulvinar lorem, ac volutpat metus lacinia et. Ut vehicula gravida iaculis. Sed vulputate quam ipsum, vel elementum lacus porta et. In hac habitasse platea dictumst. Aenean lacinia elit non vehicula tempor. Ut vel orci sit amet velit facilisis egestas. Suspendisse massa erat, vehicula vel orci id, consequat lobortis nibh. Vestibulum varius leo vel risus gravida, sed scelerisque ante fringilla. Sed scelerisque nisi sed tempor maximus. Quisque diam dui, varius et lacus quis, lobortis lobortis magna. Sed pellentesque erat convallis sollicitudin tempor. Aliquam sit amet mauris elementum massa ultrices tempor in at velit.
-        
-        Quisque lobortis varius sem, cursus eleifend eros tincidunt non. Curabitur sollicitudin porttitor cursus. Praesent non odio luctus, ultrices ante a, sodales erat. Etiam porta vitae nisi ut eleifend. Suspendisse accumsan nisi sit amet libero faucibus rhoncus. Etiam nec luctus tortor. Phasellus in tincidunt nibh. Praesent aliquam quis tellus vitae ultricies. Maecenas tempor sollicitudin eros, et egestas dui. Curabitur vitae lacus sollicitudin, tincidunt libero sed, maximus lectus. Proin et nisi in nisi porta auctor et et ex. Integer in varius neque.
-        
-        Aliquam hendrerit turpis vitae sapien hendrerit gravida. Maecenas nec placerat nunc, id venenatis purus. Fusce ante urna, cursus id fringilla tristique, congue sit amet sapien. Maecenas hendrerit varius est facilisis rhoncus. Fusce dignissim volutpat ornare. Aenean sit amet erat non risus mattis congue. Donec rutrum dapibus ante lobortis lacinia. Ut in ipsum ipsum. Donec mattis faucibus justo a finibus. Nunc ipsum sapien, hendrerit sit amet malesuada eu, varius at diam. Quisque suscipit mauris et eros mollis aliquet. Mauris egestas scelerisque efficitur. Sed at erat ultricies, laoreet justo sed, placerat mi.
-        
-        In eget tincidunt urna, at tristique urna. Morbi congue mauris non erat finibus, sed vehicula tortor dapibus. Etiam euismod rhoncus auctor. Fusce mollis, est ac pellentesque dictum, urna lacus semper odio, sed placerat lectus sem in eros. Donec rutrum lacus dui, sed aliquet metus egestas nec. Aenean sed lectus eu lectus tincidunt egestas in at nisl. Aenean posuere augue felis, sit amet euismod nunc malesuada malesuada.               
-  </p>
+  
 </div>
 
 <footer class="page-footer font-small blue pt-4">
