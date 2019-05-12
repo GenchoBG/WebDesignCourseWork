@@ -1,6 +1,9 @@
 $(document).ready(function () {
     let current = $("#sections li a.active").attr("section-for");
 
+    $("#products").children().hide();
+    $(`#${current}`).show();
+
     $("#sections li a").on("click", function() {
         let section = $(this).attr("section-for");
 
